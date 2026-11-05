@@ -1,0 +1,14 @@
+{
+  "name": "deteccao-encontros",
+  "version": "1.0.0",
+  "description": "Detecção de encontros entre monitorados a partir de dados de geolocalização",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=18.3" },
+  "scripts": {
+    "test": "node --test",
+    "all": "node tools/run-all.js",
+    "verify": "node tools/compare.js output/respostas1.json datasets/respostas1.json && node tools/compare.js output/respostas2.json datasets/respostas2.json",
+    "bench": "node tools/bench.js"
+  }
+}
